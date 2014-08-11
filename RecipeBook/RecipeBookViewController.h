@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RecipeBookViewController : UIViewController
+@interface RecipeBookViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end
